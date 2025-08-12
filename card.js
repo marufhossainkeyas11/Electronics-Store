@@ -42,7 +42,7 @@ function cardMake(p, product) {
   p.innerHTML += `
       <article class="card" data-available="${product.available}" data-sold="${product.sold}" aria-labelledby="p1-name">
         <div class="img-frame">
-          <img src="/IMG/${product.ID}.png" alt="${product.name}">
+          <img src="/Electronics-Store/IMG/${product.ID}.png" alt="${product.name}">
         </div>
         <div class="card-body">
           <div class="meta">
