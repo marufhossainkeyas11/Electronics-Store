@@ -354,7 +354,7 @@ document.body.addEventListener('click', (ev) => {
   if (rem) { const id = rem.dataset.id; if (confirm('Remove item?')) removeFromCart(id); return; }
 });
 
-function attachToExistingButtons() {
+function attachToExistingButtons() { 
   $$('.add-cart').forEach(btn => {
     if (btn.dataset.esAttached) return;
     btn.dataset.esAttached = '1';
@@ -394,46 +394,3 @@ function attachToExistingButtons() {
 })();
 updateFloating();
 renderCart();
-  });
-  
-}
-
-function cardMake(p, product) {
-  p.innerHTML += `
-      <article class="card" data-available="${product.available}" data-sold="${product.sold}" aria-labelledby="p1-name">
-        <div class="img-frame">
-          <img src="/Electronics-Store/IMG/${product.ID}.png" alt="${product.name}">
-        </div>
-        <div class="card-body">
-          <div class="meta">
-            <div>
-              <div class="title" id="p1-name">${product.name}</div>
-              <div class="muted" style="margin-top:6px;">${product.description}</div>
-            </div>
-            <div class="price">৳${product.price.toFixed(2)}</div>
-          </div>
-          
-          <div class="stats" aria-hidden="false">
-            <div>Available: <strong class="info-available"></strong></div>
-            <div>Sold: <strong class="info-sold"></strong></div>
-          </div>
-          
-          <div class="progress-wrap">
-            <div class="progress-bar" aria-hidden="true"><span></span></div>
-            <div class="progress-note">— % of stock sold</div>
-          </div>
-          
-          <div class="actions">
-            <button class="btn primary add-cart">Add to cart</button>
-            <button class="btn ghost buy-now">Buy now</button>
-          </div>
-          
-          <div class="card-footer">
-            <div>ID: ${product.ID}</div>
-            <div>${product.notice}</div>
-          </div>
-        </div>
-      </article>
-     `;
-}
-
