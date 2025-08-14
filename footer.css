@@ -16,3 +16,7 @@
   color: gray;
   margin-bottom: 15px;
 }
+.footer{
+  position: relative;
+  z-index: 1201;
+}
