@@ -220,14 +220,14 @@
   <script>
     function renderProducts(list) {
       //-------------------------------------------------------------------
-      const microelectronics = document.querySelector('.microelectronics');
-      const microelectronicsProducts = list
-        .filter(p => p.categories.includes("microelectronics"))
+      const topSale = document.querySelector('.topSale');
+      const topSaleProducts = list
+        .filter(p => p.categories.includes("topSale"))
       
-      for (const product of microelectronicsProducts) {
-        cardMake(microelectronics, product);
+      for (const product of topSaleProducts) {
+        cardMake(topSale, product);
       }
-      cardFtouch(microelectronics);
+      cardFtouch(topSale);
     }
   </script>
 </body>
