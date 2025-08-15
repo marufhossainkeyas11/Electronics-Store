@@ -136,7 +136,7 @@ nav .hide svg {
   align-items: center;
 }
 
-.s_bar input[type="text"] {
+.s_bar input[type=search] {
   padding: 7px 0px 7px 12px;
   border: none;
   border-radius: 4px;
@@ -145,8 +145,13 @@ nav .hide svg {
   width: 100%;
 }
 
-.s_bar input[type="text"]:focus {
+.s_bar input[type=search]:focus {
   outline: none;
+}
+
+.s_bar input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .s_bar button {
@@ -160,4 +165,8 @@ nav .hide svg {
 
 .s_bar svg {
   transform: translate(-6%, 5%);
+}
+
+.s_bar input:focus~button {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
