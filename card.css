@@ -15,6 +15,10 @@
   padding: 18px;
 }
 
+.sectionS{
+  min-height: calc(100vh - 135px);
+}
+
 .grid-wrap {
   /*--gcols: repeat(auto-fill, minmax(var(--min-card), 1fr));
   */
@@ -388,4 +392,11 @@ textarea {
 
 .close {
   background: #0000002D;
+}
+
+.showB {
+  display: block;
+  height: 60vh;
+  background: url('/No_results_found_for_search..png') no-repeat center/ contain ;
+  opacity: .1;
 }
