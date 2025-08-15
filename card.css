@@ -397,6 +397,6 @@ textarea {
 .showB {
   display: block;
   height: 60vh;
-  background: url('/No_results_found_for_search..png') no-repeat center/ contain ;
+  background: url('IMG/No_results_found_for_search.png') no-repeat center/ contain ;
   opacity: .1;
 }
