@@ -74,7 +74,7 @@
     </div>
   </header>
   
-  <div class="section">
+  <div class="section sectionS">
     <header style="margin-bottom:20px;">
       <h1 style="margin-bottom: 2px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
@@ -231,7 +231,7 @@
           keyword.toLowerCase().includes(searchTerm)
         )
       );
-  console.log(searchProducts)
+      if(!searchProducts[0]) document.querySelector('.section').innerHTML += '<div class="showB"></div>';
       for (const product of searchProducts) {
         cardMake(search, product);
       }
